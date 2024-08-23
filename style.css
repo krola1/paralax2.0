@@ -1,4 +1,7 @@
-/* Først definerer jeg globale regler for siden.
+/*
+Alle kommentarene er for egen læring.
+
+Først definerer jeg globale regler for siden.
 legger kun til 0 margin siden det er en innebygd i html fra før */
 * {
   margin: 0;
@@ -53,7 +56,8 @@ som kommer senere */
   text-transform: uppercase;
   font-size: 27px;
   letter-spacing: 8px;
-  background-color: #666;
+  background-color: #89898942;
   color: white;
   padding: 20px;
+  box-shadow: 0 0 10px 5px #898989;
 }
