@@ -1,0 +1,59 @@
+/* Først definerer jeg globale regler for siden.
+legger kun til 0 margin siden det er en innebygd i html fra før */
+* {
+  margin: 0;
+}
+/* Svart for å få "box-shadow: white" til å fungere senere
+hvis denne legges inn i globale regler lages det en strek på siden av tekstboksene, vet ikke hvorfor  */
+body {
+  background-color: black;
+}
+
+/* Her definerer jeg fellesegenskaper for bildeseksjonene.
+relative er det som gjør at tekst definert inni går dit de hører hjemme
+attachment er det som lager "paralax effekten" */
+.bilde {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.8;
+}
+
+/*Her definerer jeg egenskaper til bildeseksjonenene 
+i ID'er. Dette er for å kunne justere individuelle
+egenskaper som størrelse*/
+#bilde1 {
+  background-image: url(bilde1.avif);
+  min-height: 100vh;
+}
+#bilde2 {
+  background-image: url(bilde2.jpg);
+  min-height: 400px;
+}
+#bilde3 {
+  background-image: url(bilde3.jpg);
+  min-height: 400px;
+}
+/* Definerer hvordan jeg ønsker at overgangene skal se ut */
+.splitter {
+  box-shadow: 0 0 10px 10px white;
+}
+/* Definerer rammeverk for plassering av "tekstBoks" 
+som kommer senere */
+.plassering {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+/* hvordan selve boksen med tekst skal oppføre seg */
+.tekstBoks {
+  text-transform: uppercase;
+  font-size: 27px;
+  letter-spacing: 8px;
+  background-color: #666;
+  color: white;
+  padding: 20px;
+}
